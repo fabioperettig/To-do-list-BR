@@ -8,7 +8,7 @@ todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
 
 //Functions
-function addTodo(event) {
+function addTodo(event) => {
     event.preventDefault(); //Impede reinicialização automática da página
     console.log("Tarefa registrada!")
 
