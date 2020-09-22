@@ -8,7 +8,7 @@ todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
 
 //Functions
-function addTodo('click', event) {
+function addTodo(click, event) {
     event.preventDefault(); //Impede reinicialização automática da página
 
     //Create Todo DIV
