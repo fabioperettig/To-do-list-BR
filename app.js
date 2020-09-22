@@ -8,8 +8,8 @@ todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
 
 //Functions
-function addTodo(event) {
-    event.preventDefault(); //Impede reinicialização automática da página
+function addTodo(e) {
+    e.preventDefault();
 
     //Create Todo DIV
     const todoDiv = document.createElement("div");
