@@ -1,3 +1,35 @@
+/*
+ * inForm points to the form
+ */
+var inForm = document.getElementById('idGetUserFrm');
+/*
+ * IE submits the form twice
+ * To avoid this the boolean isSumbitted is:
+ *  1) initialized to false when the form is displayed 4 the first time
+ * Remark: it is not the same event as "body load"
+ */
+var isSumbitted = false;
+
+function checkEnter(e) {
+  if (e && e.keyCode == 13) {
+    inForm.submit();
+    /*
+      * 2) set to true after the form submission was invoked
+      */
+    isSumbitted = true;
+  }
+}
+function onSubmit () {
+  if (isSumbitted) {
+    /*
+    * 3) reset to false after the form submission executed
+    */
+    isSumbitted = false;
+    return false;
+  }
+}
+
+
 //Selectors
 const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".todo-button");
