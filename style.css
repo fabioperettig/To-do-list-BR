@@ -1,0 +1,162 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 1rem;
+    background-image: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: whitesmoke;
+    font-family: "Baloo Tammudu 2", cursive;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+
+body::-webkit-scrollbar {
+    width: .5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background:#0072ff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background:whitesmoke;
+    border-radius: 3rem;
+
+}
+
+/* END OF NAVBAR */
+
+header {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    padding-top: 25rem;
+    font-size: 1rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fa-pencil-alt {
+    padding: 1rem;
+    height: 3rem;
+}
+
+header, form {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form input, form button {
+    outline: none;
+    margin-top: -3.5rem;
+    padding: .5rem;
+    font-size: 1.5rem;
+    border: none;
+    background: whitesmoke;
+}
+
+input::placeholder{
+    font-family: "Baloo Tammudu 2", cursive;
+    font-weight: 400;
+    font-size: 1rem;
+   color: #a7a7a7;
+}
+
+input, select, textarea{
+    color: #484848;
+}
+
+form button {
+    color: whitesmoke;
+    background: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+form button:hover{
+    background: none;
+    /*color: #51ff74;*/
+    transform: rotate(180deg);
+}
+
+/*'Check and Trash' container*/
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 40%;
+    list-style: none;
+   
+}
+
+.todo {
+    margin: .5rem;
+    background: whitesmoke;
+    color: #2b2b2b;
+    font-weight: 1000;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .5s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.fa-check, .fa-trash{
+    pointer-events: none;
+}
+
+.trash-btn, .complete-btn{
+    outline: none;
+    background: none;
+    color: #e2e2e2;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn{
+    background: none;
+    color: #9acd32;
+}
+
+.trash-btn{
+    background: none;
+    color: tomato;
+}
+
+.todo-item{
+    padding: 0rem .5rem;
+}
+
+.completed {
+    text-decoration:line-through;
+    color: #e2e2e2;
+}
+
+.fall {
+    transform: scale(0);
+    opacity: 0;
+}
