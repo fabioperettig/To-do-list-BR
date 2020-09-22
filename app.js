@@ -8,8 +8,8 @@ todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
 
 //Functions
-function addTodo(e) {
-    e.preventDefault();
+function addTodo(event) {
+    event.preventDefault(); //Impede reinicialização automática da página
 
     //Create Todo DIV
     const todoDiv = document.createElement("div");
@@ -38,7 +38,6 @@ function addTodo(e) {
 
     //Clear Todo Input
     todoInput.value="";
-  e.preventDefault();
 }
 
 function deleteCheck(e) {
