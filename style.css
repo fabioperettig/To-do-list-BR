@@ -159,3 +159,25 @@ form button:hover{
     transform: scale(0);
     opacity: 0;
 }
+
+@media only screen and (min-width: 600px) {
+    header {
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fa-pencil-alt {
+        padding: .5rem;
+        height: 2rem;
+    }
+}
