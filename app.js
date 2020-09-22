@@ -10,6 +10,7 @@ todoList.addEventListener("click", deleteCheck);
 //Functions
 function addTodo(click, event) {
     event.preventDefault(); //Impede reinicialização automática da página
+    console.log("funciona!")
 
     //Create Todo DIV
     const todoDiv = document.createElement("div");
